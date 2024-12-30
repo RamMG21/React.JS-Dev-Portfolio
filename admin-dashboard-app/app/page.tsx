@@ -1,10 +1,12 @@
+import TopBar from "@/components/TopBar";
 import Sidebar from "../components/Sidebar";
 import DashboardTop from "@/components/DashboardTop";
 
 const Home: React.FC = () => {
   return (
     <div>
-      <Sidebar />
+      {/*<Sidebar />*/}
+      
     </div>
   );
 };

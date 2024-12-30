@@ -9,6 +9,7 @@ import { FaBell } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 
 import { useState } from "react";
+import Link from "next/link";
 
 const Sidebar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false); // Estado para manejar la visibilidad de la barra lateral
@@ -54,10 +55,13 @@ const Sidebar: React.FC = () => {
             </a>
           </li>
           <li className="mb-4">
-            <a href="#" className="hover:underline flex items-center">
-            <FaMoneyCheckDollar className="mr-2 text-4xl"/>
-              Transactions
-            </a>
+            <Link href="/calndar" className="hover:underline flex items-center">
+              
+                <FaMoneyCheckDollar className="mr-2 text-4xl"/>
+                Transactions
+             
+            </Link>
+           
           </li>
         </ul>
         <button
@@ -78,9 +82,9 @@ const Sidebar: React.FC = () => {
                 <div className="m-2 w-full">
                     <h3>Dasboard</h3>
                 </div>
-                <div id="search" className="w-3/12  flex rounded-md  bg-gray-500  ">
+                <div id="search" className="w-3/12  flex rounded-md  bg-gray-500 ">
                     <div className="items-center flex">
-                    <FaSearch className="m-1 text-2xl"/>
+                    <FaSearch className="m-2 text-2xl"/>
                     <h3 className="pl-4">Search...</h3>
                     </div>
                 </div>
@@ -111,7 +115,7 @@ const Sidebar: React.FC = () => {
             </div>
         </div>
 
-        <div className="mt-4 w-full h-64 border-4 border-white">
+        <div className="mt-4 w-full h-64 bg-blue-950 rounded-lg p-2">
             <h1>Weekly Recap</h1>
         </div>
 
